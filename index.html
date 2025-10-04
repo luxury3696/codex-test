@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangang Experience | www.hangang.co.uk</title>
+  <style>
+    :root {
+      --primary: #2a6f97;
+      --accent: #ffb703;
+      --dark: #14213d;
+      --light: #f8f9fa;
+      --text: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
+      color: var(--text);
+      background-color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(20, 33, 61, 0.85), rgba(42, 111, 151, 0.85)),
+        url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color: white;
+      padding: 6rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 40rem;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: rgba(255, 183, 3, 0.9);
+      color: var(--dark);
+      transform: translateY(-3px);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(20, 33, 61, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(20, 33, 61, 0.12);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+
+    .highlight {
+      background-color: #fff8e1;
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: linear-gradient(135deg, rgba(42, 111, 151, 0.9), rgba(255, 183, 3, 0.9));
+      border-radius: 24px;
+      color: white;
+      box-shadow: 0 30px 60px rgba(20, 33, 61, 0.15);
+    }
+
+    .cta h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: var(--dark);
+      color: white;
+      padding: 0.85rem 2.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: rgba(20, 33, 61, 0.9);
+      transform: translateY(-4px);
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 4rem 1.25rem;
+      }
+
+      nav {
+        gap: 0.75rem;
+      }
+
+      nav a {
+        padding: 0.65rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>www.hangang.co.uk</h1>
+    <p>한강의 사계절, 문화, 그리고 도시의 숨결을 담은 프리미엄 라이프스타일 플랫폼을 만나보세요.</p>
+    <nav>
+      <a href="#experience">한강 라이프</a>
+      <a href="#events">이벤트</a>
+      <a href="#guide">여행 가이드</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="experience">
+      <h2>한강의 매력을 그대로</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>계절별 시그니처 루트</h3>
+          <p>봄 벚꽃 러닝부터 가을 감성 피크닉까지, 각 계절에 맞춘 한강 라이프 루트를 추천해 드립니다.</p>
+        </article>
+        <article class="card">
+          <h3>로컬 크리에이터 스토리</h3>
+          <p>수상 스포츠, 음악, 디자인 등 한강을 무대로 활동하는 로컬 크리에이터들을 인터뷰로 만나보세요.</p>
+        </article>
+        <article class="card">
+          <h3>프리미엄 멤버십</h3>
+          <p>한강 전망 라운지, 팝업 이벤트, 테이스팅 클래스 등 멤버십 전용 혜택으로 특별한 하루를 선물합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>다가오는 이벤트</h2>
+      <div class="highlight">
+        <h3>한강 야간 요트 &amp; 와인 페어링</h3>
+        <p>감각적인 DJ 셋과 함께하는 프라이빗 요트 크루즈, 미쉐린 셰프의 와인 페어링이 준비되어 있습니다.</p>
+        <p><strong>일정:</strong> 2024년 9월 7일 (토) 19:00 - 22:30</p>
+        <p><strong>장소:</strong> 여의도 한강공원 마리나</p>
+        <p><strong>예약:</strong> 한정 인원, 사전 예약 필수</p>
+      </div>
+    </section>
+
+    <section id="guide">
+      <h2>여행자를 위한 한강 가이드</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>추천 체험</h3>
+          <p>수상 택시, 서핑, 선셋 피크닉 등 도시 속 자연을 만끽할 수 있는 체험을 큐레이션합니다.</p>
+        </article>
+        <article class="card">
+          <h3>미식 탐방</h3>
+          <p>한강 뷰 레스토랑부터 푸드트럭 거리까지, 미식가를 위한 스폿을 지도와 함께 안내합니다.</p>
+        </article>
+        <article class="card">
+          <h3>스마트한 이동</h3>
+          <p>공유 자전거, 전동 킥보드, 수상버스 등 편리한 이동 수단과 이용 팁을 확인하세요.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <h2>협업 및 제휴 문의</h2>
+      <p>www.hangang.co.uk는 브랜드, 문화 기관, 크리에이터와 함께 한강의 새로운 경험을 만듭니다.</p>
+      <p>제휴, 이벤트 기획, 콘텐츠 제작이 필요하시다면 아래 버튼을 눌러 문의해 주세요.</p>
+      <a href="mailto:hello@hangang.co.uk">hello@hangang.co.uk</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Hangang Experience. All rights reserved.</p>
+    <p><a href="https://www.hangang.co.uk">www.hangang.co.uk</a> | Inspired by the vibrant flow of the Han River.</p>
+  </footer>
+</body>
+</html>
